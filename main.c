@@ -2,7 +2,7 @@
 #include "gradebook.h"
 
 int loadFromFile(const char* file, Student list[], int max);
-
+//test comment
 
 int main(void)
 {
