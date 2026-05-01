@@ -25,6 +25,10 @@ int main(void) {
 				 break;
 			case 3 : deleteStudent(all_students, &student_count);
 				 break;
+			case 4 : updateStudent(all_students, student_count); 
+        		 break;
+			case 5 : sortStudents(all_students, student_count); 
+         		break;
 			case 0 : printf("Exiting...\n");
 				 return 0;
 			default: printf("Invalid Choice\n\n");
