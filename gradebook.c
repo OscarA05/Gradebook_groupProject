@@ -2,9 +2,9 @@
 #include <string.h>
 #include "gradebook.h"
 
-void printStudent(const Student s)
+void printStudent(const Student* s)
 {
-	printf("ID: %d | Name: %s | Grade: %.1f\n", s.id, s.name, s.grade);
+	printf("ID: %d | Name: %s | Grade: %.1f\n", s->id, s->name, s->grade);
 }
 
 void add(Student list[], int count, int max)
@@ -14,7 +14,7 @@ void add(Student list[], int count, int max)
 		printf("Enter ID: ");
 		scanf("%d", &list[count].id);
 		printf("Enter Name: ");
-		scanf(" %50[^\n]", %list[count].name);
+		scanf(" %49[^\n]", &list[count].name);
 		printf("Enter Grade: ");
 		scanf("%f", &list[count].grade);
 
@@ -39,7 +39,7 @@ void deleteStudent(Student list[], int count)
 {
 	int find, i, j;
 	printf("Enter ID of student: ");
-	scanf("%d", find);
+	scanf("%d", &find);
 
 	for(i = 0; i < count; i++)
 	{
