@@ -13,7 +13,7 @@ int main(void) {
 	while(1)
 	{
 		printf("MENU\n\n");
-		printf("1) Add\n2) List\n3) Delete\n0) Exit\n\n");
+		printf("1) Add\n2) List\n3) Delete \n4) Update\n5) Sort\n0) Exit\n\n");
 		printf("Enter Choice: ");
 		scanf("%d", &options);
 
